@@ -16,7 +16,7 @@ appearance:
   color: green
   name: IMADE3D-OctoPrint
 printerProfiles:
-  default: _default
+  default: jellybox_2
 serial:
   autoconnect: true
   baudrate: 250000
