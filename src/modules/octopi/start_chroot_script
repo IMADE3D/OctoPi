@@ -136,6 +136,7 @@ sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BillyBlaze/OctoPr
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BrokenFire/OctoPrint-SimpleEmergencyStop/archive/master.zip"
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip"
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/jneilliii/OctoPrint-ipOnConnect/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-CuraEngineLegacy/archive/master.zip"
 
 # ----------------------------imade3d end
 
