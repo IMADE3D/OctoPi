@@ -132,6 +132,9 @@ EOT
   
 popd
 
+## Pre-install IMADE3D-curated plugins
+apt-get --yes install avrdude
+
 #Make sure user pi has access to serial ports
 usermod -a -G tty pi
 usermod -a -G dialout pi
