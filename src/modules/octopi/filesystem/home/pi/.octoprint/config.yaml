@@ -3,10 +3,45 @@ webcam:
   snapshot: http://127.0.0.1:8080/?action=snapshot
   ffmpeg: /usr/bin/avconv
 plugins:
+  BetterHeaterTimeout:
+    _config_version: 2
+  announcements:
+    _config_version: 1
   cura:
     cura_engine: /usr/local/bin/cura_engine
   discovery:
     publicPort: 80
+  firmwareupdater:
+    avrdude_avrmcu: m2560
+    avrdude_baudrate: '115200'
+    avrdude_path: /usr/bin/avrdude
+    avrdude_programmer: wiring
+    enable_postflash_commandline: false
+    enable_postflash_delay: false
+    enable_postflash_gcode: false
+    enable_preflash_commandline: false
+    flash_method: avrdude
+    postflash_commandline: ''
+    postflash_delay: '20'
+    postflash_gcode: M117 Firmware updated!;M501;M500
+    preflash_commandline: ''
+  simpleemergencystop:
+    confirmationDialog: true
+  softwareupdate:
+    _config_version: 6
+    check_providers:
+      BetterHeaterTimeout: BetterHeaterTimeout
+      GcodeEditor: GcodeEditor
+      TerminalCommands: TerminalCommands
+      autoscroll: autoscroll
+      autoselect: autoselect
+      firmwareupdater: firmwareupdater
+      fullscreen: fullscreen
+      ipOnConnect: ipOnConnect
+      simpleemergencystop: simpleemergencystop
+      tempsgraph: tempsgraph
+  tempsgraph:
+    startWithAutoScale: true
 server:
   commands:
     systemShutdownCommand: sudo shutdown -h now
