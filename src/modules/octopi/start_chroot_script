@@ -18,19 +18,6 @@ unpack /filesystem/home/root /root root
 unpack /filesystem/boot /boot
 apt-get update
 
-## Pre-install IMADE3D-curated plugins
-apt-get install avrdude
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/ieatacid/OctoPrint-GcodeEditor/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/ieatacid/OctoPrint-TerminalCommands/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/MoonshineSG/OctoPrint-Autoscroll/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/OctoPrint/OctoPrint-Autoselect/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/BrokenFire/OctoPrint-SimpleEmergencyStop/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip"
-/home/pi/oprint/bin/python2 -m pip --no-cache-dir install "https://github.com/jneilliii/OctoPrint-ipOnConnect/archive/master.zip"
-
 # in case we are building from a regular raspbian image instead of the lite one...
 remove_extra=$(remove_if_installed scratch squeak-plugins-scratch squeak-vm wolfram-engine python-minecraftpi minecraft-pi sonic-pi oracle-java8-jdk bluej libreoffice-common libreoffice-core freepats greenfoot nodered)
 echo "removing:" $remove_extra
@@ -132,8 +119,25 @@ EOT
   
 popd
 
-## Pre-install IMADE3D-curated plugins
-apt-get --yes install avrdude
+# Pre-install IMADE3D-curated plugins #
+#-----------------------------------------
+
+# 1. avrdude for firmware flashing
+apt-get -y --force-yes install avrdude
+
+# 2. curated plugins 
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/ieatacid/OctoPrint-GcodeEditor/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/ieatacid/OctoPrint-TerminalCommands/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/MoonshineSG/OctoPrint-Autoscroll/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-Autoselect/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BrokenFire/OctoPrint-SimpleEmergencyStop/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip"
+sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/jneilliii/OctoPrint-ipOnConnect/archive/master.zip"
+
+# ----------------------------imade3d end
 
 #Make sure user pi has access to serial ports
 usermod -a -G tty pi
