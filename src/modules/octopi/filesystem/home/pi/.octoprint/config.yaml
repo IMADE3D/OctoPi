@@ -47,6 +47,8 @@ server:
     systemShutdownCommand: sudo shutdown -h now
     systemRestartCommand: sudo shutdown -r now
     serverRestartCommand: sudo service octoprint restart
+  pluginBlacklist:
+    enabled: true
 appearance:
   color: green
   name: IMADE3D-OctoPrint
