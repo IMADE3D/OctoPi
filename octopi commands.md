@@ -1,6 +1,9 @@
 ONCE SET UP, NEED ONLY THIS:
 ===========================
 
+cd ~/Documents/Git/OctoPi/src && ../../CustomPiOS/src/update-custompios-paths && sudo modprobe loop && sudo bash -x ./build_dist
+
+
 
 cd ~/Documents/Git/OctoPi/src
 ../../CustomPiOS/src/update-custompios-paths
