@@ -59,7 +59,7 @@ serial:
   baudrate: 250000
 slicing:
   defaultProfiles:
-    cura: coarse-v3-12-2018
+    cura: PLA_2_medium_C15_v4
 temperature:
   cutoff: 60
   profiles:
