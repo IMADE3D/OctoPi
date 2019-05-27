@@ -262,5 +262,3 @@ fi
 apt-get clean
 apt-get autoremove -y
 
-#reboot the system on account of plugin installation etc.
-sudo shutdown -r now
