@@ -5,6 +5,16 @@ webcam:
 plugins:
   BetterHeaterTimeout:
     _config_version: 2
+  TerminalCommands:
+    controls:
+    - commands: M290 Z-0.1
+      name: Live adjust Z -0.10
+    - commands: M290 Z-0.05
+      name: Live adjust Z -0.05
+    - commands: M290 Z0.05
+      name: Live adjust Z +0.05
+    - commands: M290 Z0.1
+      name: Live adjust Z +0.10
   announcements:
     _config_version: 1
   cura:
@@ -27,6 +37,11 @@ plugins:
     preflash_commandline: ''
   simpleemergencystop:
     confirmationDialog: true
+  ipOnConnect:
+    delay: '30'
+    displayTime: '60'
+  portlister:
+    autoconnect_delay: 20
   softwareupdate:
     _config_version: 6
     check_providers:
@@ -35,10 +50,15 @@ plugins:
       TerminalCommands: TerminalCommands
       autoscroll: autoscroll
       autoselect: autoselect
+      curalegacy: curalegacy
+      filemanager: filemanager
       firmwareupdater: firmwareupdater
       fullscreen: fullscreen
       ipOnConnect: ipOnConnect
+      portlister: portlister
+      requestspinner: requestspinner
       simpleemergencystop: simpleemergencystop
+      slicer: slicer
       tempsgraph: tempsgraph
   tempsgraph:
     startWithAutoScale: true
