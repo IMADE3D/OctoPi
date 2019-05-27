@@ -127,25 +127,22 @@ popd
 apt-get -y --force-yes install avrdude
 
 # 2. curated plugins
-# alias pipip="sudo -u pi /home/pi/oprint/bin/pip install"
-# pipip "https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout/archive/master.zip"
 
-alias pipip="sudo -u pi /home/pi/oprint/bin/pip install"
-pipip /home/pi/.curated-plugins/Autoscroll-master.zip
-pipip /home/pi/.curated-plugins/Autoselect-master.zip
-pipip /home/pi/.curated-plugins/BetterHeaterTimeout-master.zip
-pipip /home/pi/.curated-plugins/CuraEngineLegacy-master.zip
-pipip /home/pi/.curated-plugins/FileManager-master.zip
-pipip /home/pi/.curated-plugins/FirmwareUpdater-master.zip
-pipip /home/pi/.curated-plugins/FullScreen-master.zip
-pipip /home/pi/.curated-plugins/GcodeEditor-master.zip
-pipip /home/pi/.curated-plugins/PortLister-master.zip
-pipip /home/pi/.curated-plugins/RequestSpinner-master.zip
-pipip /home/pi/.curated-plugins/SimpleEmergencyStop-master.zip
-pipip /home/pi/.curated-plugins/Slicer-master.zip
-pipip /home/pi/.curated-plugins/Tempsgraph-master.zip
-pipip /home/pi/.curated-plugins/TerminalCommands-master.zip
-pipip /home/pi/.curated-plugins/ipOnConnect-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/Autoscroll-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/Autoselect-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/BetterHeaterTimeout-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/CuraEngineLegacy-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/FileManager-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/FirmwareUpdater-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/FullScreen-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/GcodeEditor-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/PortLister-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/RequestSpinner-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/SimpleEmergencyStop-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/Slicer-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/Tempsgraph-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/TerminalCommands-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/ipOnConnect-master.zip
 
 # ----------------------------imade3d end
 
