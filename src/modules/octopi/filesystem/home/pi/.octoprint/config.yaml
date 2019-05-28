@@ -80,7 +80,7 @@ serial:
   autoconnect: true
 slicing:
   defaultProfiles:
-    cura: PLA_2_medium_C15_v4
+    cura: pla_0.3_coarse_curalegacy
 temperature:
   cutoff: 60
   profiles:
