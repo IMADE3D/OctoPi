@@ -86,20 +86,20 @@ EOT
   
   #CuraEngine
   # filip commented out; installing cura separately later
-  # if [ "$OCTOPI_INCLUDE_CURAENGINE" == "yes" ]
-  # then
-  #   echo "--- Installing CuraEngine for now"
-  #   folder=CuraEngine-$OCTOPI_CURAENGINE_VERSION
-  #   zipfile=$folder.zip
-  #   apt-get -y install gcc-4.9 g++-4.9
-  #   sudo -u pi wget -O$zipfile $OCTOPI_CURAENGINE_ARCHIVE
-  #   sudo -u pi unzip $zipfile
-  #   pushd $folder
-  #     sudo -u pi make CXX=g++-4.9 VERSION=$OCTOPI_CURAENGINE_VERSION
-  #     cp build/CuraEngine /usr/local/bin/cura_engine
-  #   popd
-  #   sudo -u pi rm -r $folder $zipfile
-  # fi
+  if [ "$OCTOPI_INCLUDE_CURAENGINE" == "yes" ]
+  then
+    echo "--- Installing CuraEngine for now"
+    folder=CuraEngine-$OCTOPI_CURAENGINE_VERSION
+    zipfile=$folder.zip
+    apt-get -y install gcc-4.9 g++-4.9
+    sudo -u pi wget -O$zipfile $OCTOPI_CURAENGINE_ARCHIVE
+    sudo -u pi unzip $zipfile
+    pushd $folder
+      sudo -u pi make CXX=g++-4.9 VERSION=$OCTOPI_CURAENGINE_VERSION
+      cp build/CuraEngine /usr/local/bin/cura_engine
+    popd
+    sudo -u pi rm -r $folder $zipfile
+  fi
 
   #setup haproxy for http and https, and webcam
   if [ "$OCTOPI_INCLUDE_HAPROXY" == "yes" ]
@@ -255,11 +255,11 @@ fi
 
 ### CuraEngine
 # filip commented this out to leave our yaml alone
-# if [ ! "$OCTOPI_INCLUDE_CURAENGINE" == "yes" ]
-# then
-#   # unconfigure the cura engine path in octoprint's config.yaml
-#   sudo -u pi sed -i -e "s@cura_engine: /usr/local/bin/cura_engine@cura_engine:@g" /home/pi/.octoprint/config.yaml
-# fi
+ if [ ! "$OCTOPI_INCLUDE_CURAENGINE" == "yes" ]
+ then
+   # unconfigure the cura engine path in octoprint's config.yaml
+   sudo -u pi sed -i -e "s@cura_engine: /usr/local/bin/cura_engine@cura_engine:@g" /home/pi/.octoprint/config.yaml
+ fi
 
 ### mjpg_streamer
 
