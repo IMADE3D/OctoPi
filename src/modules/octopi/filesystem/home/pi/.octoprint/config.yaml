@@ -38,10 +38,10 @@ plugins:
   simpleemergencystop:
     confirmationDialog: true
   ipOnConnect:
-    delay: '30'
+    delay: '18'
     displayTime: '60'
   portlister:
-    autoconnect_delay: 20
+    autoconnect_delay: 10
   softwareupdate:
     _config_version: 6
     check_providers:
@@ -75,8 +75,9 @@ appearance:
 printerProfiles:
   default: jellybox_2
 serial:
-  autoconnect: true
+  port: /dev/ttyACM0
   baudrate: 250000
+  autoconnect: true
 slicing:
   defaultProfiles:
     cura: PLA_2_medium_C15_v4
