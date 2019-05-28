@@ -1,7 +1,6 @@
-webcam:
-  stream: /webcam/?action=stream
-  snapshot: http://127.0.0.1:8080/?action=snapshot
-  ffmpeg: /usr/bin/avconv
+appearance:
+  color: green
+  name: IMADE3D-OctoPrint
 plugins:
   BetterHeaterTimeout:
     _config_version: 2
@@ -62,6 +61,12 @@ plugins:
       tempsgraph: tempsgraph
   tempsgraph:
     startWithAutoScale: true
+printerProfiles:
+  default: jellybox_2
+serial:
+  autoconnect: true
+  baudrate: 250000
+  port: /dev/ttyACM0
 server:
   commands:
     systemShutdownCommand: sudo shutdown -h now
@@ -69,15 +74,6 @@ server:
     serverRestartCommand: sudo service octoprint restart
   pluginBlacklist:
     enabled: true
-appearance:
-  color: green
-  name: IMADE3D-OctoPrint
-printerProfiles:
-  default: jellybox_2
-serial:
-  port: /dev/ttyACM0
-  baudrate: 250000
-  autoconnect: true
 slicing:
   defaultProfiles:
     cura: pla_0.3_coarse_curalegacy
@@ -93,3 +89,7 @@ temperature:
   - bed: 70
     extruder: 230
     name: PETG
+webcam:
+  stream: /webcam/?action=stream
+  snapshot: http://127.0.0.1:8080/?action=snapshot
+  ffmpeg: /usr/bin/avconv
