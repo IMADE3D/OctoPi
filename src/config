@@ -1,4 +1,4 @@
 export DIST_NAME=OctoPi
 export DIST_VERSION=0.16.0IE
-export MODULES="base(raspicam, network, disable-services(auto-hotspot), disable-services(octopi), password-for-sudo)"
+export MODULES="base(raspicam, network, disable-services(octopi,auto-hotspot), password-for-sudo)"
 
