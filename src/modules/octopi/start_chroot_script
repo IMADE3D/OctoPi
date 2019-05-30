@@ -124,7 +124,7 @@ popd
 #-----------------------------------------
 
 # 1. avrdude for firmware flashing
-apt-get -y --force-yes install avrdude
+#apt-get -y --force-yes install avrdude
 
 # 2. curated plugins
 # These are from local storage; so outdated most likely
@@ -136,29 +136,29 @@ apt-get -y --force-yes install avrdude
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/FirmwareUpdater-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/FullScreen-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/GcodeEditor-master.zip
-# sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/PortLister-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/PortLister-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/RequestSpinner-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/SimpleEmergencyStop-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/Slicer-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/Tempsgraph-master.zip
 # sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/TerminalCommands-master.zip
-# sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/ipOnConnect-master.zip
+sudo -u pi /home/pi/oprint/bin/pip install /home/pi/.curated-plugins/ipOnConnect-master.zip
 
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/markwal/OctoPrint-PortLister/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/jneilliii/OctoPrint-ipOnConnect/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/ieatacid/OctoPrint-TerminalCommands/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BrokenFire/OctoPrint-SimpleEmergencyStop/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-RequestSpinner/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/kennethjiang/OctoPrint-Slicer/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-CuraEngineLegacy/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/Salandora/OctoPrint-FileManager/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/ieatacid/OctoPrint-GcodeEditor/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-Autoselect/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/MoonshineSG/OctoPrint-Autoscroll/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/markwal/OctoPrint-PortLister/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/jneilliii/OctoPrint-ipOnConnect/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/tjjfvi/OctoPrint-BetterHeaterTimeout/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/ieatacid/OctoPrint-TerminalCommands/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-FirmwareUpdater/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BrokenFire/OctoPrint-SimpleEmergencyStop/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-RequestSpinner/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/kennethjiang/OctoPrint-Slicer/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-CuraEngineLegacy/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/Salandora/OctoPrint-FileManager/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/ieatacid/OctoPrint-GcodeEditor/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPrint-Autoselect/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/MoonshineSG/OctoPrint-Autoscroll/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip"
 
 # ----------------------------imade3d end
 
