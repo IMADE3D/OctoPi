@@ -219,7 +219,7 @@ start_gcode:
 
   M117 Preparing    ;write Preparing
 
-  M190 S30          ;wait for the bed to reach 20C
+  M190 S{print_bed_temperature}              ;wait for the bed to reach desired temperature
 
   M109 S180         ;wait for the extruder to reach 180C
 
@@ -240,8 +240,6 @@ start_gcode:
   G0 Y0 F5000       ;position Y in front
 
   G0 Z15 F3000      ;position Z
-
-  M190 S{print_bed_temperature}              ;wait for the bed to reach desired temperature
 
   M109 S{print_temperature}             ;wait for the extruder to reach desired temperature
 
