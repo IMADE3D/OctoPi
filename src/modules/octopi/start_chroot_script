@@ -159,7 +159,7 @@ sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/OctoPrint/OctoPri
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/MoonshineSG/OctoPrint-Autoscroll/archive/master.zip"
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/1r0b1n0/OctoPrint-Tempsgraph/archive/master.zip"
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/BillyBlaze/OctoPrint-FullScreen/archive/master.zip"
-sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/amsbr/OctoPrint-Stats/archive/master.zip"
+#sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/amsbr/OctoPrint-Stats/archive/master.zip"
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/jneilliii/OctoPrint-TabOrder/archive/master.zip"
 sudo -u pi /home/pi/oprint/bin/pip install "https://github.com/amsbr/OctoPrint-EEprom-Marlin/archive/master.zip"
 
