@@ -1,6 +1,18 @@
 appearance:
   color: green
   name: IMADE3D-OctoPrint
+  components:
+    order:
+      tab:
+      - temperature
+      - control
+      - gcodeviewer
+      - terminal
+      - plugin_slicer
+      - timelapse
+      - plugin_filemanager
+      - plugin_stats
+      - plugin_bedlevelvisualizer
 plugins:
   BetterHeaterTimeout:
     _config_version: 2
@@ -14,6 +26,14 @@ plugins:
       name: Live adjust Z +0.05
     - commands: M290 Z0.1
       name: Live adjust Z +0.10
+  bedlevelvisualizer:
+    command: 'M155 S30
+
+      @BEDLEVELVISUALIZER
+
+      M420 V
+
+      M155 S3'
   announcements:
     _config_version: 1
   cura:
@@ -58,7 +78,57 @@ plugins:
       requestspinner: requestspinner
       simpleemergencystop: simpleemergencystop
       slicer: slicer
+      stats: stats
+      taborder: taborder
       tempsgraph: tempsgraph
+  taborder:
+    _config_version: 4
+    tabs:
+    - icon: fas fa-thermometer-quarter
+      icon_color: '#5e5e5e'
+      icon_tooltip: Temperature
+      name: temperature
+      showtext: true
+    - icon: fas fa-arrows-alt
+      icon_color: '#5e5e5e'
+      icon_tooltip: Control
+      name: control
+      showtext: true
+    - icon: fas fa-eye
+      icon_color: '#5e5e5e'
+      icon_tooltip: Gcode Viewer
+      name: gcodeviewer
+      showtext: true
+    - icon: fas fa-terminal
+      icon_color: '#5e5e5e'
+      icon_tooltip: Terminal
+      name: terminal
+      showtext: true
+    - icon: fas fa-layer-group
+      icon_color: '#5e5e5e'
+      icon_tooltip: Slicer
+      name: plugin_slicer
+      showtext: true
+    - icon: fas fa-images
+      icon_color: '#5e5e5e'
+      icon_tooltip: Timelapse
+      name: timelapse
+      showtext: true
+    - icon: fas fa-server
+      icon_color: '#5e5e5e'
+      icon_tooltip: File Manager
+      name: plugin_filemanager
+      showtext: true
+    - icon: fas fa-chart-pie
+      icon_color: '#5e5e5e'
+      icon_tooltip: Printer Stats
+      name: plugin_stats
+      showtext: true
+    - icon: fas fa-chart-area
+      icon_color: '#5e5e5e'
+      icon_tooltip: Bed Visualizer
+      name: plugin_bedlevelvisualizer
+      showtext: true
   tempsgraph:
     startWithAutoScale: true
 printerProfiles:
