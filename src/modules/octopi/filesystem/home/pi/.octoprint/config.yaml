@@ -36,7 +36,7 @@ plugins:
       M155 S3'
   announcements:
     _config_version: 1
-  cura:
+  curalegacy:
     cura_engine: /usr/local/bin/cura_engine
   discovery:
     publicPort: 80
