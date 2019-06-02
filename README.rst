@@ -1,3 +1,8 @@
+What is this
+    This is a fork of https://github.com/guysoft/OctoPi, pre-configured for JellyBOX 3D printers and maintained by IMADE3D.
+
+____
+
 OctoPi
 ======
 
@@ -17,9 +22,7 @@ Download the latest stable build via this button:
 .. image:: https://i.imgur.com/NvUOGfS.png
    :target: https://octopi.octoprint.org/latest
 
-Official mirror is `here <https://github.com/guysoft/OctoPi/releases>`_
-
-Nightly builds are available `here <http://gnethomelinux.com/OctoPi/nightly/>`_
+Official mirror is `here <https://github.com/IMADE3D/OctoPi/releases>`_
 
 How to use it?
 --------------
