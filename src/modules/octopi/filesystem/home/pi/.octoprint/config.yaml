@@ -150,7 +150,7 @@ slicing:
 temperature:
   cutoff: 60
   profiles:
-  - bed: 20
+  - bed: 60
     extruder: 180
     name: Universal Preheat
   - bed: 60
