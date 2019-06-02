@@ -54,13 +54,13 @@ plugins:
     postflash_delay: '20'
     postflash_gcode: M117 Firmware updated and factory reset performed!;M502;M500
     preflash_commandline: ''
-  simpleemergencystop:
-    confirmationDialog: true
   ipOnConnect:
     delay: '18'
     displayTime: '60'
   portlister:
     autoconnect_delay: 10
+  simpleemergencystop:
+    confirmationDialog: true
   softwareupdate:
     _config_version: 6
     check_providers:
