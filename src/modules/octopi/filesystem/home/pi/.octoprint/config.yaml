@@ -52,7 +52,7 @@ plugins:
     flash_method: avrdude
     postflash_commandline: ''
     postflash_delay: '20'
-    postflash_gcode: M117 Firmware updated!;M501;M500
+    postflash_gcode: M117 Firmware updated and factory reset performed!;M502;M500
     preflash_commandline: ''
   simpleemergencystop:
     confirmationDialog: true
