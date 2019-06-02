@@ -146,7 +146,7 @@ server:
     enabled: true
 slicing:
   defaultProfiles:
-    cura: pla_0.3_coarse_curalegacy
+    cura: pla_0.2_medium_curalegacy
 temperature:
   cutoff: 60
   profiles:
