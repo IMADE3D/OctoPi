@@ -20,7 +20,7 @@ Where to get it?
 Download the latest stable build via this button:
 
 .. image:: https://i.imgur.com/NvUOGfS.png
-   :target: https://octopi.octoprint.org/latest
+   :target: https://github.com/IMADE3D/OctoPi/releases/latest
 
 Official mirror is `here <https://github.com/IMADE3D/OctoPi/releases>`_
 
@@ -81,7 +81,7 @@ You can build it by issuing the following commands::
     sudo apt-get install gawk util-linux realpath qemu-user-static git p7zip-full python3
     
     git clone https://github.com/guysoft/CustomPiOS.git
-    git clone https://github.com/guysoft/OctoPi.git
+    git clone https://github.com/IMADE3D/OctoPi.git
     cd OctoPi/src/image
     wget -c --trust-server-names 'https://downloads.raspberrypi.org/raspbian_lite_latest'
     cd ..
