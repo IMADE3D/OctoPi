@@ -47,7 +47,7 @@ plugins:
     avrdude_programmer: wiring
     enable_postflash_commandline: false
     enable_postflash_delay: false
-    enable_postflash_gcode: false
+    enable_postflash_gcode: true
     enable_preflash_commandline: false
     flash_method: avrdude
     postflash_commandline: ''
