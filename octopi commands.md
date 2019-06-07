@@ -2,7 +2,7 @@
 PULL FROM GIT REPOS
 ===========================
 
-cd ~Documents/Git/CustomPiOS && git pull && cd ~/Documents/Git/OctoPi && git pull
+cd ~/Documents/Git/CustomPiOS && git pull && cd ~/Documents/Git/OctoPi && git pull
 
 ONCE SET UP, NEED ONLY THIS:
 ===========================
